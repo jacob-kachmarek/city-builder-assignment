@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Web App</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="images">
+                <img id="location-image" />
+                <img id="party-image" />
+                <img id="guest-image" />
+            </section>
+            <section class="dropdowns">
+                <div>
+                    Where we partyin'
+                    <select id="location-dropdown">
+                        <option value="house">In a house</option>
+                        <option value="barn">In a barn</option>
+                        <option value="warehouse">In a warehouse</option>
+                    </select>
+                </div>
+                <div>
+                    How we partyin'?
+                    <select id="party-dropdown">
+                        <option value="rager">It's a rager</option>
+                        <option value="dinner">We goin to dinner</option>
+                        <option value="concert">Bumpin tunes at a concert</option>
+                    </select>
+                </div>
+                <div>
+                    Who's comin to this thang?
+                    <select id="guest-dropdown">
+                        <option value="wook">Dirty wooks</option>
+                        <option value="cowboy">Ye-Haw cowboys</option>
+                        <option value="formal">Yuppie bastards</option>
+                    </select>
+                </div>
+            </section>
+            <section id="slogan-container">
+                <input id="slogan-input" />
+                <button id="slogan-input-button">Submit</button>
+            </section>
+        </main>
+    </body>
 </html>
