@@ -10,6 +10,9 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
+    background-image: url(../assets/backround-image-sparkle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -62,4 +65,19 @@ main {
 .stats {
     display: flex;
     justify-content: center;
+    font-weight: 500;
+    color: bisque;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    gap: 1px;
+    color: bisque;
 }
