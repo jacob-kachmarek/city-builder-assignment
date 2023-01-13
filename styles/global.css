@@ -10,6 +10,9 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
+    background-image: url(../assets/backround-image-sparkle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -32,4 +35,50 @@ header .logo {
 
 main {
     padding: 20px;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 100px;
+}
+
+.slogan-position {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dropdown-title {
+    display: flex;
+    justify-content: center;
+    color: bisque;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    gap: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    color: bisque;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    gap: 1px;
+    color: bisque;
 }

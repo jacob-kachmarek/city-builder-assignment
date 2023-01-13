@@ -1,27 +1,33 @@
-## The Golden Rule:
+![Wireframe](./assets/Simple-wireframe.png)
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+# Html
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+    <section>
 
-## Making a plan
+        <div> for location container
+        <select> for location dropdown
+            <options> for dropdown options
+        <div> for type container
+        <select> for type dropdown
+            <options> for dropdown options
+        <div> for guest container
+        <select> for guest dropdown
+            <options> for dropdown options
+    </section>
+    <section>
+        <div> for slogan section
+            <input> for slogan input
+    </section>
 
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision**
-1. **Look at the drawing and imagine using the app. What _state_ do you need to track?**
-1. **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
-1. **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+# State
 
-Additional considerations:
+    -images that change according to dropdown image
+    -dropdown menus and options
+    -slogan input that will update slogans
+    -list of slogans
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+# Events
+
+    - 3 dropdown menus with event listener 'change'
+    - track all slogan inputs from user
+    - track how many times each dropdown option has been changed
