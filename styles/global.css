@@ -37,6 +37,8 @@ main {
 .dropdowns {
     display: flex;
     justify-content: center;
+    padding: 40px;
+    gap: 100px;
 }
 
 .slogan-position {
@@ -48,4 +50,11 @@ main {
 .dropdown-title {
     display: flex;
     justify-content: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    gap: 50px;
 }
