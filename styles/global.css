@@ -53,6 +53,7 @@ main {
 .dropdown-title {
     display: flex;
     justify-content: center;
+    color: bisque;
 }
 
 .images {
