@@ -9,12 +9,15 @@ const partyDropdown = document.getElementById('party-dropdown');
 const guestDropdown = document.getElementById('guest-dropdown');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
+const locationStat = document.getElementById('location-stat');
 
 /* State */
-
+let locationCount = 0;
 /* Events */
 locationDropdown.addEventListener('change', () => {
     locationImg.src = `assets/location-${locationDropdown.value}.jpg`;
+    locationCount++;
+    locationStat.textContent = locationCount;
 });
 
 partyDropdown.addEventListener('change', () => {
